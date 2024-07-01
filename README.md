@@ -8,6 +8,9 @@ by Lucas Viga.
 
 Live review at [al-ghoul.github.io/TodoApp-WebStorageAPI/](https://al-ghoul.github.io/TodoApp-WebStorageAPI/)
 
+A snapshot of the site:
+![snapshot](./snap-shot.png)
+
 ## Used Technologies
 
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
