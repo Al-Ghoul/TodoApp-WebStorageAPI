@@ -94,8 +94,13 @@ if (storageAvailable("localStorage")) {
             item.done = true;
             window.localStorage.setItem(key, JSON.stringify(item));
             todoList[0].removeChild(todoItem);
+
+            todoItem.removeChild(buttonsDiv);
+            doneTodoList[0].appendChild(todoItem);
+
             todoHeader[0].innerText =
               "Tasks to do - " + getUnfinishedTasksCount();
+            doneTodoHeader[0].innerText = "Done - " + getFinishedTasksCount();
           });
 
           deleteBtn.addEventListener("click", (e) => {
@@ -145,7 +150,7 @@ if (storageAvailable("localStorage")) {
       item.done = true;
       window.localStorage.setItem(todoItem.innerText, JSON.stringify(item));
       todoList[0].removeChild(todoItem);
-      
+
       todoItem.removeChild(buttonsDiv);
       doneTodoList[0].appendChild(todoItem);
 
