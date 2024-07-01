@@ -6,14 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Todo App</title>
   <link href="css/style.css" rel="stylesheet" />
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
   <main class="main-content">
-    <form>
-      <input id="new-task" type="text" placeholder="Add a new task" />
-      <input class="submit-btn" type="submit" value="+" />
-    </form>
+    <section class="container">
+      <form id="new-task-form">
+        <input id="new-task" type="text" placeholder="Add a new task" required />
+        <input class="submit-btn" type="submit" value="+" />
+      </form>
+
+      <div class="container todo">
+        <div class="todo-header">Tasks to do</div>
+        <ul class="todo-list"></ul>
+      </div>
+
+      <div class="container done">
+        <div class="done-header">Done</div>
+        <ul class="done-list"></ul>
+      </div>
+    </section>
   </main>
 </body>
 

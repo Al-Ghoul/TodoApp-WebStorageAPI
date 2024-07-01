@@ -10,25 +10,40 @@ body {
 
 .main-content {
   display: flex;
+  flex-direction: column;
   flex: 1;
   background-color: #0d0714;
   color: #fff;
-  justify-content: center;
 }
 
-.main-content form {
+.main-content div form {
   display: flex;
   gap: 10px;
   margin: 70px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width:432px;
+  align-self: center;
+  align-items: center;
+}
+
+.container .todo,
+.container .done {
+  align-items: start;
+  margin-top: 10px;
+}
+
 #new-task {
   border-radius: 10px;
-  width: 300px;
+  width: 388px;
   height: 40px;
   background-color: #0d0714;
   padding: 15px;
-  border: solid 1px #3E1671;
+  border: solid 1px #3e1671;
+  color: #777777;
 }
 
 #new-task::placeholder {
@@ -39,8 +54,53 @@ body {
   border-radius: 10px;
   width: 40px;
   height: 40px;
-  background-color: #9E78CF;
+  background-color: #9e78cf;
   color: #fff;
   font-size: 20px;
   border-width: 0px;
+}
+
+.todo-header,
+.done-header {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.todo-list,
+.done-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px;
+}
+
+.todo-list>li,
+.done-list>li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 432px;
+  height: 75px;
+  background-color: #15101c;
+  border-radius: 10px;
+  padding: 21px;
+}
+
+.todo-list>li>p {
+  color: #9e78cf;
+}
+
+.todo-list>li>div>button {
+  border-width: 0px;
+  background-color: transparent;
+}
+
+.done-header {
+  margin-top: 60px;
+}
+
+.done-list>li>p {
+  text-decoration: line-through;
+  color: #78cfb0;
 }
