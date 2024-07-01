@@ -150,6 +150,7 @@ if (storageAvailable("localStorage")) {
       doneTodoList[0].appendChild(todoItem);
 
       todoHeader[0].innerText = "Tasks to do - " + getUnfinishedTasksCount();
+      doneTodoHeader[0].innerText = "Done - " + getFinishedTasksCount();
     });
 
     deleteBtn.addEventListener("click", (e) => {
