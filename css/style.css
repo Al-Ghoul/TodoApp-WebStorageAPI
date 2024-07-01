@@ -38,12 +38,13 @@ body {
 
 #new-task {
   border-radius: 10px;
-  width: 388px;
+  width: 380px;
   height: 40px;
   background-color: #0d0714;
   padding: 15px;
   border: solid 1px #3e1671;
   color: #777777;
+  margin-top: 50px;
 }
 
 #new-task::placeholder {
