@@ -15,4 +15,5 @@ A snapshot of the site:
 
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
